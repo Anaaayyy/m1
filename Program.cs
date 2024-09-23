@@ -11,8 +11,9 @@ namespace m1
         static void Main(string[] args)
         {
             Console.Write("Введите целое число: ");
-            int chislo = Console.Read();
+            int chislo = Console.Read(); 
 
+            //проверка на четность деление на 2 и сравнивание остатка с нулем
             if (chislo % 2 == 0)
             {
                 Console.WriteLine("Число четное");

@@ -10,6 +10,7 @@ namespace m1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("fkf");
         }
     }
 }

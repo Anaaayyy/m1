@@ -32,8 +32,20 @@ namespace m1
 
             //формула нахождения площади круга через радиус(Квадрат можно записать как произведение числа самого на себя)
             double plosad = Math.PI * radiys * radiys;
-            Console.WriteLine("Площадь круга :"+ Math.Round(plosad, 2 ));
+            Console.Write("Площадь круга :"+ Math.Round(plosad, 2 ));
+            Console.ReadLine();
+
+            Console.WriteLine("******************Фамилия и имя пользователя****************************");
+
+            Console.Write("Введите свое имя: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Введите свою фамилию: ");
+            string surname = Console.ReadLine();
+
+            Console.WriteLine($"Имя: {name}  Фамилия: {surname}");
             Console.ReadKey();
+
 
         }
     }

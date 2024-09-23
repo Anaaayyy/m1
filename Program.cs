@@ -30,6 +30,7 @@ namespace m1
             Console.Write("Введите радиус круга: ");
             double radiys = Convert.ToDouble(Console.ReadLine());
 
+            //формула нахаждения площади круга через радиус(Квадрат можно записать как произведение чисда самого на себя)
             double plosad = Math.PI * radiys * radiys;
             Console.WriteLine("Площадь круга :"+ Math.Round(plosad, 2 ));
             Console.ReadKey();

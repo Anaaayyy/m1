@@ -10,7 +10,16 @@ namespace m1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("fkf");
+            Console.Write("Введите целое число: ");
+            int chislo = Console.Read();
+
+            if (chislo % 2 == 0)
+            {
+                Console.WriteLine("Число четное");
+            }
+            else
+                Console.WriteLine("Число нечетное");
+            Console.ReadKey();
         }
     }
 }

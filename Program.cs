@@ -21,9 +21,17 @@ namespace m1
             }
             else
                 Console.WriteLine("Число нечетное");
+            Console.ReadLine();
+
+            Console.WriteLine("******************Нахождение площади круга****************************");
+
+            //Плошадь круга по его радиусу
+            Console.Write("Введите радиус круга: ");
+            double radiys = Convert.ToDouble(Console.ReadLine());
+
+            double plosad = Math.PI * radiys * radiys;
+            Console.WriteLine("Площадь круга :"+ Math.Round(plosad, 2 ));
             Console.ReadKey();
-
-
 
         }
     }

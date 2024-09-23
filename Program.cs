@@ -44,8 +44,18 @@ namespace m1
             string surname = Console.ReadLine();
 
             Console.WriteLine($"Имя: {name}  Фамилия: {surname}");
-            Console.ReadKey();
+            Console.ReadLine();
 
+            Console.WriteLine("******************Массив****************************");
+
+             Random rand = new Random();
+            //массив из 20 случайных чисел от 1 до 100.
+            int[] numbers = Enumerable.Range(0, 20).Select(_ => rand.Next(1, 101)).ToArray();
+            Console.WriteLine("Массив чисел: " + string.Join(", ", numbers));
+            Console.WriteLine("Минимальное значение: " + numbers.Min());
+            Console.WriteLine("Максимальное значение: " + numbers.Max());
+
+            Console.ReadKey();
 
         }
     }

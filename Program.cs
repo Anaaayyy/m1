@@ -55,8 +55,21 @@ namespace m1
             Console.WriteLine("Минимальное значение: " + numbers.Min());
             Console.WriteLine("Максимальное значение: " + numbers.Max());
 
-            Console.ReadKey();
+            Console.ReadLine();
 
+            Console.WriteLine("******************Возраст для получения прав***************************");
+
+            Console.Write("Введите ваш возраст: ");
+            int age = Convert.ToInt32(Console.ReadLine()); //строку в целое число
+            if (age >= 18)
+            {
+                Console.WriteLine("Вы можете получить водительские права.");
+            }
+            else
+            {
+                Console.WriteLine("Вы слишком молоды для пводительских прав.");
+            }
+            Console.ReadKey();
         }
     }
 }

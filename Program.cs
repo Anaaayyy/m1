@@ -10,6 +10,7 @@ namespace m1
     {
         static void Main(string[] args)
         {
+            //Проверка на четность числа 
             Console.Write("Введите целое число: ");
             int chislo = Console.Read(); 
 
@@ -21,6 +22,9 @@ namespace m1
             else
                 Console.WriteLine("Число нечетное");
             Console.ReadKey();
+
+
+
         }
     }
 }
